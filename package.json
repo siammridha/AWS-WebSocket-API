@@ -1,0 +1,7 @@
+{
+  "name": "sample-websocket-chat-app",
+  "version": "1.0.0",
+  "scripts": {
+    "deploy": "rm -rf sam-template.yaml && aws cloudformation package --template-file template.yaml --output-template-file sam-template.yaml --s3-bucket test-websockets-chat-app && aws cloudformation deploy --template-file sam-template.yaml --stack-name test-websockets-chat-app --capabilities CAPABILITY_IAM"
+  }
+}
