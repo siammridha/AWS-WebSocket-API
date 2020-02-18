@@ -1,7 +1,0 @@
-{
-  "name": "sample-websocket-chat-app",
-  "version": "1.0.0",
-  "dependencies": {
-    "aws-sdk": "^2.596.0"
-  }
-}
