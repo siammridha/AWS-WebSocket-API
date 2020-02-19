@@ -195,14 +195,14 @@ Resources:
     Type: AWS::DynamoDB::Table
     Properties:
       AttributeDefinitions:
-      - AttributeName: "Socket_id"
+      - AttributeName: "socket_id"
         AttributeType: "S"
       KeySchema:
-      - AttributeName: "Socket_id"
+      - AttributeName: "socket_id"
         KeyType: "HASH"
       ProvisionedThroughput:
-        ReadCapacityUnits: 5
-        WriteCapacityUnits: 5
+        ReadCapacityUnits: 1
+        WriteCapacityUnits: 1
       SSESpecification:
         SSEEnabled: True
       TableName: !Ref TableName
